@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Country Lookup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Country Lookup</h1>
+        </div>
+        <div class="widgets" >
+            <input type="text" id="searchterm" size="20" maxlength="25" value="">
+            <br>
+            <div class="options">
+                <input type="checkbox" id="currency" name="info" value="currency">
+                <label for="currency">Currency</label>
+                <input type="checkbox" id="lang" name="info" value="lang">
+                <label for="lang">Languages</label>
+                <input type="checkbox" id="tzone" name="info" value="tzone">
+                <label for="lang">Timezone</label>
+            </div>
+            <button type="button" id="search">Search</button>
+            <br>
+            <img src="images/searching.gif" id="searching"><br>            
+            <select id="results">
+                <option value="results" selected>Select your Country...</option>
+            </select>
+        </div>
+        
+        <div id="content"><br><br><br><br><i>Please search for a Country to display information</i></div>
+    </div>
+</body>
+</html>
